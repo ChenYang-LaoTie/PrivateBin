@@ -1,0 +1,40 @@
+# Ignore server files for safety
+.htaccess
+.htpasswd
+cfg/*
+!cfg/conf.sample.php
+!cfg/.htaccess
+
+# Ignore data/
+/data/
+
+# Ignore PhpDoc
+doc/*
+!doc/*.md
+
+# Ignore vendor dir of Composer except PHP files
+vendor/*.*
+vendor/*/*.*
+vendor/*/*/*.*
+vendor/*/*/*/*.*
+vendor/*/*/*/*/*.*
+vendor/*/*/*/*/*/*.*
+vendor/**/LICENSE
+vendor/**/test
+vendor/**/tst
+vendor/**/tests
+vendor/**/build_phar.php
+!vendor/**/*.php
+
+# Ignore local node modules, unit testing logs, api docs and IDE project files
+js/node_modules/
+js/test.log
+tst/log/
+tst/ConfigurationCombinationsTest.php
+.settings
+.buildpath
+.project
+.externalToolBuilders
+.c9
+/.idea/
+*.iml
